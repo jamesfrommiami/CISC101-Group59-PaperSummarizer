@@ -1,12 +1,5 @@
-## Change Log
-- **2025-11-28** – Added `summary_level` variable and implemented two summary modes:
-  - `summary_level = "short"` → 1–2 sentence compact summary per section.
-  - `summary_level = "detailed"` → short paragraph plus 3–5 key-point bullet list per section.
-  Updated section loop instructions to include conditional behavior for both modes.
-
 2. Section Loop
-• Extract text for each section.
-• Read the `summary_level` variable for the current run.
-• Apply summary-level logic for each section:
-  ◦ If `summary_level = "short"` → generate only a compact summary of **1–2 sentences** for that section (no bullet list).
-  ◦ If `summary_level = "detailed"` → generate a **short paragraph** plus a **bullet list of 3–5 key points** for that section.
+• Extract text for each section
+• Apply summary-level logic:
+ ◦ Brief: 1–2 sentences
+ ◦ Comprehensive: 1 paragraph + 3–5 bullet points
