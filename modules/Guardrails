@@ -1,4 +1,4 @@
-3. Guardrails
+Guardrails
 • Enforce strict evidence mode (summaries only from provided text)
 • Generate warnings for missing/empty/short sections
 • Block hallucinations and flag insufficient evidence
