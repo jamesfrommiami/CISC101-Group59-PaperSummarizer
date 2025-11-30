@@ -1,4 +1,25 @@
-Guardrails
+## Change Log
+- **2025-11-29** 
+  – Added `evidence_mode` flag with 'strict' setting and defined behaviour in case of failure to obtain necessary information.
+  - Added standardized section warning messages for missing/empty sections and sections that are too short. (< 50 words)
+  - Clarified integration points with Module 02 (section loop) and added metadata tags to be produced in these cases.
+
+3. Guardrails
 • Enforce strict evidence mode (summaries only from provided text)
 • Generate warnings for missing/empty/short sections
 • Block hallucinations and flag insufficient evidence
+
+• Strict Evidence Mode
+  • If evidence_mode = "strict" → only include claims, equations, and results that appear in the provided text.
+  • If summarizer cannot find enough information → output:
+  “The source text does not provide enough detail to summarize this section in strict evidence mode.”
+  • Do not generate a summary when evidence is insufficient.
+• Section Warning Messages
+  • If a section is missing/empty → output:
+    “Section skipped due to no usable text being provided.”
+  • If a section is too short (< 50 words) → output:
+    “Section very short: summary may be incomplete.”
+
+
+
+
